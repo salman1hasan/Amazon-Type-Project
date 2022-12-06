@@ -14,14 +14,14 @@ export default function Layout({ title, children }) {
       <div className="flex min-h-screen flex-col justify-between">
         <header>
           <nav className="flex h-12 items-center px-4 justify-between shadow-md">
-            <Link href="/">
+            <Link legacyBehavior href={'/'}>
               <a className="text-lg font-bold">amazona</a>
             </Link>
             <div>
-              <Link href="/cart">
+              <Link legacyBehavior href={'/cart'}>
                 <a className="p-2">Cart</a>
               </Link>
-              <Link href="/login">
+              <Link legacyBehavior href={'/login'}>
                 <a className="p-2">Login</a>
               </Link>
             </div>
